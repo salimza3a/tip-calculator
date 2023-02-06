@@ -1,6 +1,7 @@
 import { Box, Label, Option, Select } from '@twilio-paste/core';
 
-export const TipSelect = ({ tipPercentage, updateTip = () => {} }) => {
+export const TipSelect = ({ tipPercentage, updateTip }) => {
+  console.log(tipPercentage, 'percentage');
   return (
     <Box marginY="space80">
       <Label htmlFor="tip-amount">How much would you like to tip?</Label>
